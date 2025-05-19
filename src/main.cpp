@@ -1,7 +1,8 @@
 #include <Arduino.h>
 #include <mcp_can.h>
-
-// RX \ NO TX
+// GEELY EMGRAND --> Delphi MT80 Engine System(KWP2000)
+//-----------------------------------------------------//
+//  RX \ NO TX
 long unsigned int rxId;
 unsigned char len;
 unsigned char rxBuf[8];
