@@ -8,8 +8,8 @@ unsigned char len;
 unsigned char rxBuf[8];
 
 char msgString[128];
-#define CAN0_INT 2
-MCP_CAN CAN0(10);
+#define CAN0_INT 2 // INT pin for arduino r3
+MCP_CAN CAN0(10);  // CS pin for arduino r3
 
 String setNormal = "NORMAL";
 String setLoopback = "LOOPBACK";
@@ -95,7 +95,7 @@ void setup()
 {
     Serial.begin(250000);
     pinMode(LED_BUILTIN, OUTPUT);
-    if (CAN0.begin(MCP_ANY, CAN_500KBPS, MCP_8MHZ) == CAN_OK)
+    if (CAN0.begin(MCP_ANY, CAN_500KBPS, MCP_8MHZ) == CAN_OK) // make sure of this !
     {
         CAN0.setMode(MCP_LOOPBACK);
         Serial.println("Initialized MCP2515. Mode: LOOPBACK (default unless NORMAL is sent)");
