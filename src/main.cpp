@@ -114,7 +114,7 @@ void loop()
     if (Serial.available())
     {
         String command = Serial.readStringUntil('\n');
-        command.trim(); // Remove any \r or spaces
+        command.trim();
 
         if (command == setNormal)
         {
