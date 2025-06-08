@@ -3,14 +3,14 @@
 
 ---
 
-## 📁 Where’s the Code?
+## Where’s the Code?
 You’ll find the script in the `src` folder under `main.cpp`.
 
 You can also use the same script with `ESP32` or `ESP8266` instead of the Arduino Uno R3.
 
 ---
 
-## 🔌 Wiring Diagram
+## Wiring Diagram
 
 > ⚠️ **NOTE:** CS and INT pins are defined in code. Be careful when changing these, as the INT pin from the MCP2515 outputs **5V**.
 
@@ -28,7 +28,7 @@ You can also use the same script with `ESP32` or `ESP8266` instead of the Arduin
 
 ---
 
-## ⚙️ Configuration Tips
+## Configuration Tips
 
 - Ensure your Serial Monitor baud rate is set to **250000**.
 - In the script, check **line 98** and modify it to match your MCP2515 crystal speed (8 MHz or 16 MHz).
@@ -39,7 +39,7 @@ You can also use the same script with `ESP32` or `ESP8266` instead of the Arduin
 
 ---
 
-## 🛠️ Available Serial Commands
+## Available Serial Commands
 
 | Command    | Description                                                                 |
 |------------|-----------------------------------------------------------------------------|
@@ -51,7 +51,7 @@ You can also use the same script with `ESP32` or `ESP8266` instead of the Arduin
 
 ---
 
-## 📘 MCP2515 Mode Descriptions
+## MCP2515 Mode Descriptions
 
 - **NORMAL MODE**: Actively listens for incoming CAN frames, including frames it sends.
 - **LOOPBACK MODE**: Test mode — MCP2515 does not receive external frames but will "hear" its own messages.
